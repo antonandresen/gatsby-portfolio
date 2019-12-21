@@ -1,19 +1,20 @@
-import React from "react";
+import React, { Fragment } from 'react';
 
-import Footer from "../components/footer";
-import Header from "../components/header";
-import "../styles/index.scss";
-import layoutStyles from "./layout.module.scss";
+import Footer from '../components/footer';
+import Header from '../components/header';
+import '../styles/index.scss';
+import '../styles/global.scss';
+import layoutStyles from './layout.module.scss';
 
 const Layout = props => {
   return (
-    <div className={layoutStyles.container}>
-      <div className={layoutStyles.content}>
-        <Header />
-        {props.children}
+    <Fragment>
+      <Header />
+      <div className={layoutStyles.container}>
+        <div className={layoutStyles.content}>{props.children}</div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Fragment>
   );
 };
 

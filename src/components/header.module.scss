@@ -1,17 +1,33 @@
 .header {
-  padding: 1rem 0 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #227cc5d3;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.title {
-  color: #000000;
+.title h4 a {
+  color: #dfdfdf;
   font-size: 3rem;
   text-decoration: none;
 }
 
 .navList {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style-type: none;
-  margin: 0;
+  width: 30%;
 }
 
 .navItem {
@@ -27,4 +43,61 @@
 
 .activeNavItem {
   color: #333333;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #dfdfdf;
+  margin: 6px 0;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .navList {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    width: 50%;
+    top: 8vh;
+    background-color: #227cc5d3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .navList li a {
+    font-size: 2rem;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.navActive {
+  transform: translateX(0%);
+}
+
+.burgerToggle {
+  .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .line2 {
+    opacity: 0;
+  }
+  .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
