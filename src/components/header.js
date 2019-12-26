@@ -17,6 +17,10 @@ const Header = () => {
 
   const [sideMenuIsOpen, setSideMenuIsOpen] = useState(false);
 
+  const handleLinkClick = e => {
+    setSideMenuIsOpen(false);
+  };
+
   return (
     <header className={[headerStyles.header].join(' ')}>
       <div className={headerStyles.title}>
@@ -38,6 +42,7 @@ const Header = () => {
           <Link
             className={headerStyles.navItem}
             activeClassName={headerStyles.activeNavItem}
+            onClick={handleLinkClick}
             to="/"
           >
             Home
@@ -47,6 +52,7 @@ const Header = () => {
           <Link
             className={headerStyles.navItem}
             activeClassName={headerStyles.activeNavItem}
+            onClick={handleLinkClick}
             to="/projects"
           >
             Projects
@@ -56,6 +62,7 @@ const Header = () => {
           <Link
             className={headerStyles.navItem}
             activeClassName={headerStyles.activeNavItem}
+            onClick={handleLinkClick}
             to="/blog"
           >
             Blog
@@ -65,6 +72,7 @@ const Header = () => {
           <Link
             className={headerStyles.navItem}
             activeClassName={headerStyles.activeNavItem}
+            onClick={handleLinkClick}
             to="/contact"
           >
             Contact
