@@ -18,6 +18,7 @@ const Header = () => {
   const [sideMenuIsOpen, setSideMenuIsOpen] = useState(false);
 
   const handleLinkClick = e => {
+    console.log('switch');
     setSideMenuIsOpen(false);
   };
 

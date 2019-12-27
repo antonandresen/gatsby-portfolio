@@ -4,7 +4,7 @@ import Footer from './footer';
 import Header from './header';
 import '../styles/index.scss';
 import '../styles/global.scss';
-import layoutStyles from './layout.module.scss';
+import layoutStyles from './landingLayout.module.scss';
 
 const Layout = props => {
   return (

@@ -1,9 +1,14 @@
+$primaryColor: #ff887b;
+
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #227cc5d3;
+  background-color: $primaryColor;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   li {
     margin: 0;
@@ -17,7 +22,7 @@
 }
 
 .title h4 a {
-  color: #dfdfdf;
+  color: #ffffff;
   font-size: 2rem;
   text-decoration: none;
 }
@@ -31,7 +36,7 @@
 }
 
 .navItem {
-  color: #999999;
+  color: #ffffff;
   font-size: 0.9rem;
   margin-right: 1.3rem;
   text-decoration: none;
@@ -69,7 +74,7 @@
     height: 92vh;
     width: 50%;
     top: 8vh;
-    background-color: #227cc5d3;
+    background-color: $primaryColor;
     display: flex;
     flex-direction: column;
     align-items: center;

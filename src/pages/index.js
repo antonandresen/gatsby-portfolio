@@ -1,18 +1,16 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
+import Layout from '../components/landingLayout';
 import Head from '../components/head';
+import LandingImage from '../components/landingImage';
+import indexStyles from './index.module.scss';
 
 const IndexPage = () => {
   return (
     <Layout>
       <Head pageTitle="Home" />
-      <h1>Anton Portfolio!</h1>
-      <h2>Fullstack developer from sweden.</h2>
-      <p>
-        Need a developer? <Link to="/contact">Contact me.</Link>
-      </p>
+      <LandingImage />
     </Layout>
   );
 };
