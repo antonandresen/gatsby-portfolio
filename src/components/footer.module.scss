@@ -1,3 +1,8 @@
+$footerBg: #ff887b;
+
 .footer {
-  margin-top: 3rem;
+  display: block;
+  overflow: hidden;
+  padding: 70px 0;
+  background-color: $footerBg;
 }

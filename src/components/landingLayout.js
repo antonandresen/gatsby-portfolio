@@ -12,8 +12,8 @@ const Layout = props => {
       <Header />
       <div className={layoutStyles.container}>
         <main className={layoutStyles.content}>{props.children}</main>
-        <Footer />
       </div>
+      <Footer />
     </Fragment>
   );
 };
