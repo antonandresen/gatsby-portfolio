@@ -28,7 +28,7 @@ const Footer = () => {
           className={footerStyles.socialBtn}
           href="https://github.com/Anton1337"
         >
-          <i className={footerStyles.asd}>
+          <i>
             <FontAwesomeIcon icon={faGithub} size="1x" />
           </i>
         </a>

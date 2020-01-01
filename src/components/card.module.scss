@@ -1,0 +1,91 @@
+$primaryColor: #ff887b;
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  width: 300px;
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.cardImage {
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+
+  img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+  }
+}
+
+.cardText {
+  grid-area: text;
+  margin: 10px;
+
+  .date {
+    color: $primaryColor;
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.cardStats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: $primaryColor;
+
+  .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+  }
+
+  .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .value {
+    font-size: 22px;
+  }
+
+  .border {
+    border-left: 1px solid lighten($color: $primaryColor, $amount: 10);
+    border-right: 1px solid lighten($color: $primaryColor, $amount: 10);
+  }
+
+  .value sup {
+    font-size: 12px;
+  }
+}

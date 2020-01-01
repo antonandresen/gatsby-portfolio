@@ -31,16 +31,14 @@ $btnSize: 45px;
   overflow: hidden;
   position: relative;
   text-align: center;
+  transition: 0.1s linear;
 
   i {
     line-height: $btnSize;
     font-size: 13;
-    transition: 0.2s linear;
   }
 
   &:hover {
-    i {
-      transform: scale(1.3);
-    }
+    transform: scale(1.2);
   }
 }
