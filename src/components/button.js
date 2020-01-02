@@ -3,9 +3,9 @@ import { Link } from 'gatsby';
 
 import buttonStyles from './button.module.scss';
 
-const Button = ({ text }) => {
+const Button = ({ text, primary }) => {
   return (
-    <Link className={buttonStyles.button} to="/projects">
+    <Link className={primary ? buttonStyles.buttonPrimary : buttonStyles.button} to="/projects">
       {text}
     </Link>
   );
