@@ -5,7 +5,10 @@ import buttonStyles from './button.module.scss';
 
 const Button = ({ text, primary }) => {
   return (
-    <Link className={primary ? buttonStyles.buttonPrimary : buttonStyles.button} to="/projects">
+    <Link
+      className={primary ? buttonStyles.buttonPrimary : buttonStyles.button}
+      to="/projects"
+    >
       {text}
     </Link>
   );

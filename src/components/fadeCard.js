@@ -12,6 +12,7 @@ const FadeCard = ({ image, title, text }) => {
       </div>
       <div className={fadeCardStyles.content}>
         <h3 className={fadeCardStyles.title}>{title}</h3>
+
         <p className={fadeCardStyles.text}>{text}</p>
         <Button primary text="Find Out More" />
       </div>
