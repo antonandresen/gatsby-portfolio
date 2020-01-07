@@ -34,26 +34,28 @@ const BlogPage = () => {
   return (
     <Layout>
       <Head pageTitle="Blog" />
-      <h1>Blog</h1>
-      <ol className={blogStyles.posts}>
-        {edges.map((edge, i) => {
-          const {
-            frontmatter: { title, date, image, summary },
-            fields: { slug },
-          } = edge.node;
-          return (
-            <li className={blogStyles.post} key={i}>
-              <BlogPost
-                title={title}
-                date={date}
-                image={image}
-                text={summary}
-                slug={slug}
-              />
-            </li>
-          );
-        })}
-      </ol>
+      <div className={blogStyles.page}>
+        <h1>Blog</h1>
+        <ol className={blogStyles.posts}>
+          {edges.map((edge, i) => {
+            const {
+              frontmatter: { title, date, image, summary },
+              fields: { slug },
+            } = edge.node;
+            return (
+              <li className={blogStyles.post} key={i}>
+                <BlogPost
+                  title={title}
+                  date={date}
+                  image={image}
+                  text={summary}
+                  slug={slug}
+                />
+              </li>
+            );
+          })}
+        </ol>
+      </div>
     </Layout>
   );
 };

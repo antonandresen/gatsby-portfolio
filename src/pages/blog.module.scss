@@ -1,9 +1,16 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
 .posts {
   list-style-type: none;
   margin: 0;
+  align-self: center;
 }
 
 .post {
+  margin-left: 1.8rem;
   a {
     text-decoration: none;
   }
