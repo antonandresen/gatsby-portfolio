@@ -11,12 +11,14 @@ const ContactPage = () => {
       <Head pageTitle="Contact" />
       <article className={contactStyles.container}>
         <section className={contactStyles.illustration}>
-          <img src='/contact.svg'/>
+          <img src="/contact.svg" />
         </section>
         <section className={contactStyles.content}>
           <h1>Get in touch!</h1>
           <p>Form comes here.</p>
-          <a href="mailto:anton.andresen@hotmail.com?subject=Business opportunity">anton.andresen@hotmail.com</a>
+          <a href="mailto:anton.andresen@hotmail.com?subject=Business opportunity">
+            anton.andresen@hotmail.com
+          </a>
         </section>
       </article>
     </Layout>
