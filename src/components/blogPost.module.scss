@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
+  margin-left: 1.8rem;
 }
 
 .image {
@@ -102,9 +103,11 @@
 
 @media (max-width: 768px) {
   .post {
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 2rem;
     flex-direction: column;
+    margin-left: 0rem;
+    box-shadow: 0 0.8rem 5rem rgba(0, 0, 0, 0.2);
   }
 
   .image {
