@@ -1,0 +1,36 @@
+.button {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  border: #ffffff 1px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+
+  transition: background 0.3s;
+
+  &:hover {
+    background: rgba($color: #ffffff, $alpha: 0.09);
+
+    transition: background 0.3s;
+  }
+}
+
+.buttonPrimary {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ff887b;
+  border: #ff887b 1px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  cursor: pointer;
+
+  transition: background 0.3s;
+
+  &:hover {
+    background: rgba($color: #ff887b, $alpha: 0.09);
+
+    transition: background 0.3s;
+  }
+}

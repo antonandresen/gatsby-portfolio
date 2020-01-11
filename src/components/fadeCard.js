@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Button from './button';
+import LinkButton from './linkButton';
 
 import fadeCardStyles from './fadeCard.module.scss';
 
-const FadeCard = ({ image, title, text }) => {
+const FadeCard = ({ image, title, text, projectLink, codeLink }) => {
   return (
     <div className={fadeCardStyles.card}>
       <div className={fadeCardStyles.image}>
@@ -14,7 +14,8 @@ const FadeCard = ({ image, title, text }) => {
         <h3 className={fadeCardStyles.title}>{title}</h3>
 
         <p className={fadeCardStyles.text}>{text}</p>
-        <Button primary text="Find Out More" />
+        <LinkButton primary text="Checkout Project" link={projectLink} />
+        <LinkButton primary text="Look At The Code" link={codeLink} />
       </div>
     </div>
   );

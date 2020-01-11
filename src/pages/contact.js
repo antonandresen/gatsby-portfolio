@@ -16,7 +16,7 @@ const ContactPage = () => {
         <section className={contactStyles.content}>
           <h1>Get in touch!</h1>
           <p>Form comes here.</p>
-          <a href="mailto:anton.andresen@hotmail.com?subject=Business opportunity">
+          <a href="mailto:anton.andresen@hotmail.com?subject=Business Opportunity">
             anton.andresen@hotmail.com
           </a>
         </section>

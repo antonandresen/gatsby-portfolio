@@ -8,10 +8,10 @@ const ProjectGrid = () => {
     <section>
       <ul className={projectGridStyles.projects}>
         <li className={projectGridStyles.projectItem}>
-          <FadeCard image='https://puu.sh/EVJqf/238644bdbe.png' title='Torch And Turret' text='A 2D game made in the Unity3D game engine using C#. I made this game for the Brackeys Game Jam 2018'/>
+          <FadeCard image='https://puu.sh/EVJqf/238644bdbe.png' title='Torch And Turret' text='A 2D game made in the Unity3D game engine using C#. I made this game for the Brackeys Game Jam 2018' projectLink='https://antonxd.itch.io/torch-and-turret' codeLink='https://github.com/Anton1337/Torch-And-Turret'/>
         </li>
         <li className={projectGridStyles.projectItem}>
-          <FadeCard image='https://puu.sh/EVKlA/871e38a044.jpg' title='Gatsby Portfolio' text='A portfolio where i showcase all my software projects. I built the site using React.js and Gatsby' />
+          <FadeCard image='https://puu.sh/EVKlA/871e38a044.jpg' title='Gatsby Portfolio' text='A portfolio where i showcase all my software projects. I built the site using React.js and Gatsby' projectLink='https://www.anton.best/' codeLink='https://github.com/Anton1337/gatsby-portfolio' />
         </li>
       </ul>
     </section>
