@@ -5,6 +5,8 @@ import Head from '../components/head';
 import Card from '../components/card';
 import ProjectGrid from '../components/projectGrid';
 
+import projectsStyles from './projects.module.scss';
+
 const ProjectsPage = () => {
   return (
     <Layout>

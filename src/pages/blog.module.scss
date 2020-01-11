@@ -1,6 +1,10 @@
 .page {
   display: flex;
   flex-direction: column;
+  
+  h1 {
+    color: rgb(51,51,51);
+  }
 }
 
 .posts {
