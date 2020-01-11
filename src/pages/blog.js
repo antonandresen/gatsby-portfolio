@@ -35,7 +35,7 @@ const BlogPage = () => {
     <Layout>
       <Head pageTitle="Blog" />
       <div className={blogStyles.page}>
-        <h1>Blog</h1>
+        <h1>Blog (Blogposts are WIP)</h1>
         <ol className={blogStyles.posts}>
           {edges.map((edge, i) => {
             const {
