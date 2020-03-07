@@ -14,8 +14,11 @@ const ProjectGrid = () => {
           <FadeCard image='https://puu.sh/EVKlA/871e38a044.jpg' title='Gatsby Portfolio' text='A portfolio where i showcase all my software projects. I built the site using React.js and Gatsby' projectLink='https://www.anton.best/' codeLink='https://github.com/Anton1337/gatsby-portfolio' />
         </li>
         <li className={projectGridStyles.projectItem}>
-          <FadeCard image='https://puu.sh/F8w6B/73e056facc.png' title='GymIT .NET CORE API' text='A REST API build in .NET CORE 3.1 where users can sign up, and keep track of their workouts and different exercises. MySQL, JWT.'projectLink='https://gymitapp.azurewebsites.net/swagger/index.html' codeLink='https://github.com/Anton1337/gymit-server' />
+          <FadeCard image='https://puu.sh/F8w6B/73e056facc.png' title='GymIT .NET CORE API (WIP)' text='A REST API build in .NET CORE 3.1 where users can sign up, and keep track of their workouts and different exercises. MySQL, JWT.'projectLink='https://gymitapp.azurewebsites.net/swagger/index.html' codeLink='https://github.com/Anton1337/gymit-server' />
         </li>
+        <li className={projectGridStyles.projectItem}>
+           <FadeCard image='https://puu.sh/Fi7WX/a8fa7204f6.png' title='O!MM Web App (WIP)' text='A web application made for the O!MM project. Made using React and Typescript'projectLink='https://osu-matchmaking.netlify.com/' codeLink='https://github.com/Anton1337/osu-matchmaking-client' />
+         </li>
       </ul>
     </section>
   );
